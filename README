@@ -1,0 +1,8 @@
+Shockley-Queisser
+-----------------
+Matlab routines + data files for Shockley-Queisser solar cell efficiency limit computations.
+
+Central code = ShockleyQueisser.m
+examples = genFigures.m
+
+Should add /Data, /Geometries, and /Materials to your path (either for every Matlab instance or permanently)
