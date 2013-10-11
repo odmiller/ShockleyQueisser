@@ -2,7 +2,7 @@
 % T = transmission through rear mirror - assumed independent of angle
 % ar = absorption for photons incident from the rear (i.e. at thermal
 %   equilibrium)
-% consistent with SQ, we take the front to have perfect ARC
+% consistent with SQ, we take the front to have perfect transmission
 function[af,ar] = ppNonIdealMirror(alphaL, ~, T, rearN)
 af = T*(1-exp(-alphaL)) + (1-T)*(1-exp(-2*alphaL));
 

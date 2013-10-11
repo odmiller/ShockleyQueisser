@@ -3,6 +3,8 @@
 % GaAs
 % alpha = absorption coefficient, n = refractive index
 % L = thickness, in cm
+% model as used in 
+%	Miller et. al., IEEE Jour. of Photovolt. 2, 303 (2012)
 function[alphaL, n, alphaBeta] = GaAs(E, L) % GaAs parameters
     Eg = 1.4255;
     E0 = 0.0067;
@@ -15,5 +17,5 @@ function[alphaL, n, alphaBeta] = GaAs(E, L) % GaAs parameters
     
     C=7E-30;    % Auger
     ni=1.79E6;
-    alphaBeta = [C*ni^3*L 3/2]; % Auger
+    alphaBeta = [C*ni^3 3/2]; 
 end
